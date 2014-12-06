@@ -23,8 +23,11 @@ echo "-----> Extracting PhantomJS ${VERSION} binaries to ${BUILD_DIR}/vendor/pha
 mkdir -p $CACHE_DIR/$ARCHIVE_NAME
 mkdir -p $BUILD_DIR/vendor
 cd $CACHE_DIR
+pwd
 jar xf $CACHE_DIR/$FILE_NAME
+ls $CACHE_DIR/$FILE_NAME
 cd -
+ls $CACHE_DIR/$ARCHIVE_NAME
 mv $CACHE_DIR/$ARCHIVE_NAME $BUILD_DIR/vendor/phantomjs
 
 echo "-----> exporting PATH and LIBRARY_PATH"
