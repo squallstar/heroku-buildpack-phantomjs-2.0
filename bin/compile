@@ -28,14 +28,11 @@ echo $ARCHIVE_NAME
 echo $FILE_NAME
 echo "---"
 pwd
-jar xvf $CACHE_DIR/$FILE_NAME
+jar xvf $CACHE_DIR/$FILE_NAME -C $CACHE_DIR
 echo $?
 echo "***"
-cd $ARCHIVE_NAME
-pwd
-echo "files"
-ls .
-mv ./bin $BUILD_DIR/vendor/phantomjs/
+ls $CACHE_DIR/$ARCHIVE_NAME
+mv $CACHE_DIR/$ARCHIVE_NAME $BUILD_DIR/vendor/phantomjs
 echo "***"
 
 echo "-----> exporting PATH and LIBRARY_PATH"
