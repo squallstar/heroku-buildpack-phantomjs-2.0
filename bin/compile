@@ -32,9 +32,9 @@ jar xf $CACHE_DIR/$FILE_NAME
 ls $CACHE_DIR/$FILE_NAME
 ls $CACHE_DIR
 echo "***"
-ls $ARCHIVE_NAME/
-mv $ARCHIVE_NAME $BUILD_DIR/vendor/phantomjs
-ls $BUILD_DIR/vendor/
+cd $ARCHIVE_NAME
+ls
+mv ./bin $BUILD_DIR/vendor/phantomjs/
 ls $BUILD_DIR/vendor/phantomjs/
 echo "***"
 
