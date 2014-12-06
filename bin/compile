@@ -28,6 +28,7 @@ echo $FILE_NAME
 echo "---"
 pwd
 ls
+file $FILE_NAME
 jar xvf $FILE_NAME
 echo $?
 echo "***"
