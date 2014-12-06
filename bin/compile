@@ -31,9 +31,8 @@ pwd
 jar xf $CACHE_DIR/$FILE_NAME
 ls $CACHE_DIR/$FILE_NAME
 ls $CACHE_DIR
-ls $ARCHIVE_NAME
 cd -
-ls $CACHE_DIR/$ARCHIVE_NAME
+ls $CACHE_DIR/$ARCHIVE_NAME/
 mv $CACHE_DIR/$ARCHIVE_NAME $BUILD_DIR/vendor/phantomjs
 
 echo "-----> exporting PATH and LIBRARY_PATH"
