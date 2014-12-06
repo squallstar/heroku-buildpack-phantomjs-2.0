@@ -31,8 +31,12 @@ pwd
 jar xf $CACHE_DIR/$FILE_NAME
 ls $CACHE_DIR/$FILE_NAME
 ls $CACHE_DIR
-ls $ARCHIVE_NAME
+echo "***"
+ls $ARCHIVE_NAME/
 mv $ARCHIVE_NAME $BUILD_DIR/vendor/phantomjs
+ls $BUILD_DIR/vendor/
+ls $BUILD_DIR/vendor/phantomjs/
+echo "***"
 
 echo "-----> exporting PATH and LIBRARY_PATH"
 PROFILE_PATH="$BUILD_DIR/.profile.d/phantomjs.sh"
