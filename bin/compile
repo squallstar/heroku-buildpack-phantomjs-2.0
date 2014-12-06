@@ -28,12 +28,13 @@ echo $ARCHIVE_NAME
 echo $FILE_NAME
 echo "---"
 pwd
-jar xf $CACHE_DIR/$FILE_NAME
+jar xvf $CACHE_DIR/$FILE_NAME
 echo $?
 echo "***"
 cd $ARCHIVE_NAME
 pwd
-ls
+echo "files"
+ls .
 mv ./bin $BUILD_DIR/vendor/phantomjs/
 echo "***"
 
