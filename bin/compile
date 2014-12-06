@@ -27,6 +27,7 @@ echo $ARCHIVE_NAME
 echo $FILE_NAME
 echo "---"
 pwd
+ls
 jar xvf $CACHE_DIR/$FILE_NAME
 echo $?
 echo "***"
