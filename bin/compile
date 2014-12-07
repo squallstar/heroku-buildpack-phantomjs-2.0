@@ -36,7 +36,7 @@ echo $?
 echo "***"
 ls -la $ARCHIVE_NAME/bin/
 mv $ARCHIVE_NAME $BUILD_DIR/vendor/phantomjs
-ls -la $BUILD_DIR/vendor/phantomjs/bin
+chmod +x $BUILD_DIR/vendor/phantomjs/bin/phantomjs
 echo "***"
 
 echo "-----> exporting PATH and LIBRARY_PATH"
