@@ -18,7 +18,7 @@ Example usage:
 ```shell
 $ heroku create --stack cedar-14 --buildpack https://github.com/ddollar/heroku-buildpack-multi
 $ echo "https://github.com/ddollar/heroku-buildpack-apt" >> .buildpacks
-$ echo "https://github.com/srbartlett/heroku-buildpack-phantomjs.git" >> .buildpacks
+$ echo "https://github.com/srbartlett/heroku-buildpack-phantomjs-2.0.git" >> .buildpacks
 $ echo "libicu-dev" >> Aptfile
 
 $ git push heroku master
