@@ -1,7 +1,7 @@
 Heroku buildpack: PhantomJS 2.0
 =======================
 
-This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) of PhantomJS 2.0(http://phantomjs.org).
+This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) of [PhantomJS 2.0](http://phantomjs.org).
 
 Usage
 -----
@@ -16,7 +16,7 @@ and the [heroku-buildpack-apt](https://github.com/ddollar/heroku-buildpack-apt)
 Example usage:
 
 ```shell
-$ heroku create --stack cedar --buildpack https://github.com/ddollar/heroku-buildpack-multi
+$ heroku create --stack cedar-14 --buildpack https://github.com/ddollar/heroku-buildpack-multi
 $ echo "https://github.com/ddollar/heroku-buildpack-apt" >> .buildpacks
 $ echo "https://github.com/srbartlett/heroku-buildpack-phantomjs.git" >> .buildpacks
 $ echo "libicu-dev" >> Aptfile
