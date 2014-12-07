@@ -34,9 +34,9 @@ file $FILE_NAME
 jar xvf $FILE_NAME
 echo $?
 echo "***"
-ls $ARCHIVE_NAME
+ls -la $ARCHIVE_NAME/bin/
 mv $ARCHIVE_NAME $BUILD_DIR/vendor/phantomjs
-ls $BUILD_DIR/vendor/phantomjs
+ls -la $BUILD_DIR/vendor/phantomjs/bin
 echo "***"
 
 echo "-----> exporting PATH and LIBRARY_PATH"
