@@ -28,7 +28,7 @@ echo "---"
 pwd
 ls
 file $FILE_NAME
-jar xvf $FILE_NAME
+unzip $FILE_NAME
 echo $?
 echo "***"
 ls -la $ARCHIVE_NAME/bin/
