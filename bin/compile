@@ -6,12 +6,13 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 
 # config
-VERSION="2.0.0-20150528"
+VERSION="2.0.0"
+MINOR="20150528"
 
 # Buildpack URL
-ARCHIVE_NAME=phantomjs-${VERSION}
+ARCHIVE_NAME=phantomjs-${VERSION}-${MINOR}
 FILE_NAME=${ARCHIVE_NAME}-u1404-x86_64.zip
-BUILDPACK_PHANTOMJS_PACKAGE=https://github.com/bprodoehl/phantomjs/releases/download/${VERSION}/${FILE_NAME}
+BUILDPACK_PHANTOMJS_PACKAGE=https://github.com/squallstar/heroku-buildpack-phantomjs-2.0/releases/download/${VERSION}/${FILE_NAME}
 mkdir -p $CACHE_DIR
 if ! [ -e $CACHE_DIR/$FILE_NAME ]; then
   echo "-----> Fetching PhantomJS ${VERSION} binaries at ${BUILDPACK_PHANTOMJS_PACKAGE}"
